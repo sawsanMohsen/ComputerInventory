@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sawsan.inventory.DisplaySpecsActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="26dp"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/processortxt"
+        app:layout_constraintEnd_toStartOf="@+id/Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/processortxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="27dp"
+        android:text="Processor"
+        app:layout_constraintBottom_toTopOf="@+id/ram"
+        app:layout_constraintEnd_toStartOf="@+id/Processorf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/ram"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="22dp"
+        android:text="Memory"
+        app:layout_constraintBottom_toTopOf="@+id/hdd"
+        app:layout_constraintEnd_toStartOf="@+id/Memory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/processortxt" />
+
+    <TextView
+        android:id="@+id/hdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="20dp"
+        android:text="HDD"
+        app:layout_constraintBottom_toTopOf="@+id/vga"
+        app:layout_constraintEnd_toStartOf="@+id/Hdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ram" />
+
+    <TextView
+        android:id="@+id/vga"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="17dp"
+        android:text="VGA"
+        app:layout_constraintBottom_toTopOf="@+id/brand"
+        app:layout_constraintEnd_toStartOf="@+id/Vga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hdd" />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="20dp"
+        android:text="Brand"
+        app:layout_constraintBottom_toTopOf="@+id/model"
+        app:layout_constraintEnd_toStartOf="@+id/Brand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vga" />
+
+    <TextView
+        android:id="@+id/model"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="19dp"
+        android:text="Model"
+        app:layout_constraintBottom_toTopOf="@+id/screen"
+        app:layout_constraintEnd_toStartOf="@+id/Model"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brand" />
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="169dp"
+        android:text="Screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Screen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/model" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/Processorf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Processorf"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/Memory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/processortxt"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <TextView
+        android:id="@+id/Memory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/Hdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ram"
+        app:layout_constraintTop_toBottomOf="@+id/Processorf" />
+
+    <TextView
+        android:id="@+id/Screen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="169dp"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/screen"
+        app:layout_constraintTop_toBottomOf="@+id/Model" />
+
+    <TextView
+        android:id="@+id/Hdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/Vga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hdd"
+        app:layout_constraintTop_toBottomOf="@+id/Memory" />
+
+    <TextView
+        android:id="@+id/Vga"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/Brand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vga"
+        app:layout_constraintTop_toBottomOf="@+id/Hdd" />
+
+    <TextView
+        android:id="@+id/Brand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/Model"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brand"
+        app:layout_constraintTop_toBottomOf="@+id/Vga" />
+
+    <TextView
+        android:id="@+id/Model"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/Screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/model"
+        app:layout_constraintTop_toBottomOf="@+id/Brand" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
